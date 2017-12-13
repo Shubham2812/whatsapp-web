@@ -1,0 +1,30 @@
+<div class="chat">
+  <div class="participants_container">
+    <div class="group_name">
+      <span> WhatsApp </span>
+    </div>
+
+    <div class="my-profile">
+      <%= render 'users', {member: current_user, make_link: false} %>
+    </div>
+
+    <div class="participants_container_head"> <span> Users Online </span> <a class="user-chat-link" data-remote="true" href="/chat/0"> Open Group Chat </a> <span id="members_count"> <%= @online_users.length %> </span></div>
+    <div class="members_list">
+          <% @online_users.each do |member| %>
+              <%= render 'users', {member: member, make_link: false} %>
+          <% end %>
+    </div>
+
+    <div class="users_container_head"> <span> All Users </span> <span id="users_count"> <%= @all_users.length %> </span></div>
+    <div class="users_list">
+      <% @all_users.each do |member| %>
+          <%= render 'users', {member: member, make_link: true} %>
+      <% end %>
+    </div>
+
+  </div>
+  <div class="chat-box-container">
+    <%= render 'chatbox', {user: @user, messages: @messages} %>
+  </div>
+
+</div>

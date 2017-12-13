@@ -2,193 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8e1716-a23e-4626-9a44-8f97e9540681" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/databaseSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/github_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__whatsapp_web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__whatsapp_web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec__whatsapp_web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__whatsapp_web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/_chatbox.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/_message.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/_users.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/add_message.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/add_user.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/index.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/remove_user.html.erb" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/Web_Developement/Rails/whatsapp-web/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$USER_HOME$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/README.rdoc" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/images/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/javascripts/authentication.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/javascripts/cart.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/javascripts/home.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/javascripts/jquery.noty.packaged.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/javascripts/product.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/javascripts/store.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/stylesheets/application.css" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/stylesheets/authentication.scss" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/stylesheets/cart.scss" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/stylesheets/home.scss" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/stylesheets/product.scss" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/assets/stylesheets/store.scss" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/controllers/application_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/controllers/authentication_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/controllers/cart_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/controllers/concerns/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/controllers/home_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/controllers/product_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/controllers/store_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/helpers/application_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/helpers/authentication_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/helpers/cart_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/helpers/home_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/helpers/product_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/helpers/store_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/mailers/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/mailers/application_mailer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/mailers/user_mailer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/models/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/models/cart.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/models/concerns/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/models/product.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/models/profile.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/models/store.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/models/user.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/authentication/confirm_email.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/authentication/signin.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/authentication/signup.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/cart/_product.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/cart/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/home/_store.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/home/edit_profile_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/home/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/home/profile.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/home/team.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/layouts/application.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/layouts/mailer.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/layouts/mailer.text.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/product/_product.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/product/_product2.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/product/add_edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/product/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/store/_product.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/store/_store.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/store/add_edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/store/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/store/new project" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/store/products.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/user_mailer/confirmation_email.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/user_mailer/welcome_email.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/app/views/user_mailer/welcome_email.text.erb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/bin/bundle" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/bin/rails" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/bin/rake" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/bin/setup" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/bin/spring" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config.ru" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/application.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/boot.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/database.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/environment.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/environments/development.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/environments/production.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/environments/test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/initializers/assets.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/initializers/backtrace_silencers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/initializers/cookies_serializer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/initializers/filter_parameter_logging.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/initializers/inflections.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/initializers/mime_types.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/initializers/session_store.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/initializers/wrap_parameters.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/locales/en.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/routes.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/config/secrets.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/db/migrate/20170619101435_create_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/db/migrate/20170619101613_create_profiles.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/db/migrate/20170619101850_create_stores.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/db/migrate/20170619102403_create_products.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/db/migrate/20170701065504_create_carts.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/db/migrate/20170709174227_add_column_to_profiles.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/db/schema.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/db/seeds.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/lib/assets/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/lib/tasks/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/log/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/422.html" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/bookclub.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/cart.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/clothes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/electronics-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/furniture-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/bookclub.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/cart.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/clothes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/electronics-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/furniture-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/male.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/product.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/profile.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/images/store.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/products/10_gianis.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/products/8_dominos.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/products/9_mc_donalds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/profiles/2_shrey.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/profiles/3_shrey.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/profiles/4_br.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/stores/4_byd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/stores/5_haldiram.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/stores/7_hudson_cafe.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/public/uploads/stores/8_pizza.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/controllers/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/controllers/authentication_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/controllers/cart_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/controllers/home_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/controllers/product_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/controllers/store_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/fixtures/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/fixtures/carts.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/fixtures/products.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/fixtures/profiles.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/fixtures/stores.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/fixtures/users.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/helpers/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/integration/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/mailers/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/mailers/previews/user_mailer_preview.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/mailers/user_mailer_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/models/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/models/cart_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/models/product_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/models/profile_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/models/store_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/models/user_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/test/test_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/vendor/assets/javascripts/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/vendor/assets/stylesheets/.keep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/whatsapp-web.iml" afterPath="$PROJECT_DIR$/.idea/whatsapp-web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -682,12 +497,12 @@
       <workItem from="1512674000343" duration="48147000" />
       <workItem from="1513151882877" duration="96000" />
       <workItem from="1513152020247" duration="32000" />
-      <workItem from="1513152100971" duration="1541000" />
+      <workItem from="1513152100971" duration="1655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77477000" />
+    <option name="totallyTimeSpent" value="77591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -706,10 +521,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5051793" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32686085" sideWeight="0.49721116" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.49721116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34304208" sideWeight="0.4948207" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.49561754" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.49561754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
