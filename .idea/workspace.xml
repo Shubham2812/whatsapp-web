@@ -410,6 +410,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -681,12 +682,12 @@
       <workItem from="1512674000343" duration="48147000" />
       <workItem from="1513151882877" duration="96000" />
       <workItem from="1513152020247" duration="32000" />
-      <workItem from="1513152100971" duration="1466000" />
+      <workItem from="1513152100971" duration="1541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77402000" />
+    <option name="totallyTimeSpent" value="77477000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,6 +764,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Group Chat Implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Group Chat Implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
