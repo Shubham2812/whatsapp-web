@@ -1,0 +1,3 @@
+var li = $('<%= escape_javascript(render "message", message: @message) %>')[0];
+console.log(li);
+$('#send_<%= @receiver_id %>')[0].parentElement.firstElementChild.firstElementChild.appendChild(li);

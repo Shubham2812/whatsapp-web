@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  devise_for :users, controllers: { sessions: 'users/sessions' }
+  get '/' => 'home#index'
+  get '/chat/:user_id' => 'home#index'
+  post 'users/add' => 'home#add_user'
+  post 'users/remove' => 'home#remove_user'
+
+  post 'message/create' => 'home#create_message'
+  post 'message/add' => 'home#add_message'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,87 @@
+
+
+console.log("Inside JS File");
+var chatBoxContainer = $('.chat-box-container');
+var title = chatBoxContainer.children()[0];
+var chat = chatBoxContainer.children()[1];
+chatBoxContainer = chatBoxContainer[0];
+chatBoxContainer.removeChild(title);
+chatBoxContainer.removeChild(chat);
+
+chatBoxContainer.innerHTML = '<%= escape_javascript(render 'chatbox', {user: @user, messages: @messages}) %>';
+var socket = io.connect('http://localhost:5000');
+var current_user_email = document.getElementById('current_user_email').innerText;
+$('#send_0').click(function(event){
+    console.log(event);
+    event.preventDefault();
+    data = {
+        sender_email: current_user_email,
+        receiver_id: undefined,
+        message: $('#send_0').siblings()[1].value
+    };
+    if(data.message != ''){
+        var message_id = undefined
+        console.log('Message Sent by Client', data);
+        $.ajax({
+            url: 'message/create',
+            method: 'POST',
+            data: data,
+//            contentType:false,
+//            cache: false,
+//            processData:false,
+            success: function (message) {
+                console.log("Message Saved", message.id)
+                $('#message').val('');
+                message_id = message.id;
+                var response = {
+                    message_id: message.id,
+                    receiver_id: undefined
+                }
+                socket.emit('message_sent', response);
+            },
+            error: function () {
+                console.log("Error in Saving Message")
+            }
+        });
+    }
+
+});
+
+$('#send_2').click(function(event){
+    event.preventDefault();
+    console.log("Send_2 Clicked");
+    data = {
+        sender_email: current_user_email,
+        receiver_id: 2,
+        message: $('#send_2').siblings()[1].value
+    }
+
+    if(data.message != ''){
+        var message_id = undefined
+        console.log('Message Sent by Client', data);
+        $.ajax({
+            url: 'message/create',
+            method: 'POST',
+            data: data,
+//            contentType:false,
+//            cache: false,
+//            processData:false,
+            success: function (message) {
+                console.log("Message Saved", message.id)
+                $('#message').val('');
+                message_id = message.id
+                var response = {
+                    message_id: message.id,
+                    receiver_id: 2
+                };
+                socket.emit('message_sent', response);
+            },
+            error: function () {
+                console.log("Error in Saving Message")
+            }
+        });
+    }
+});
+
+console.log('Done');
+

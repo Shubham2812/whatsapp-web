@@ -1,0 +1,21 @@
+<% if make_link %>
+  <a class="user-chat-link" data-remote="true" href="/chat/<%= member.id %>">
+<% end %>
+
+  <div id="<%= member.id %>" class="member">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOkwGFosI4sUe9Ka4TISnIFBNwApruJjzYmb_iYyI7F53zfas">
+    <div class="member_left">
+      <div class="member_left_upper">
+        <span class="member_name"> <b> <%= member.name %> </b> </span>
+      </div>
+      <div class="member_left_lower">
+        <span> <%= member.email %> </span>
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<% if make_link %>
+  </a>
+<% end %>

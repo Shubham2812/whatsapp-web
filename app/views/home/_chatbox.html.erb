@@ -1,0 +1,22 @@
+<div>
+  <% if user %>
+    <%= user.name %>
+    <% send_button_ID = user.id %>
+  <% else %>
+    Group Chat
+      <% send_button_ID = 0 %>
+  <% end %>
+</div>
+
+<div class="chat_box">
+  <div class="chat_window">
+    <ul class="chat-messages">
+      <% messages.each do |message| %>
+          <%= render 'message', :message => message %>
+      <% end %>
+    </ul>
+  </div>
+  <%= text_field_tag :message, nil, :placeholder => 'Enter Your Message' %>
+  <% #image_submit_tag("/images/send_button.ico", class: :send_message) %>
+  <a id="send_<%= send_button_ID %>" class="send_message"> Send </a>
+</div>

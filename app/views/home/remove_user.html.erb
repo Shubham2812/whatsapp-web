@@ -1,0 +1,5 @@
+var parent = document.getElementsByClassName('members_list')[0];
+var child = document.getElementById('<%= @user_id %>');
+if(child){
+  parent.removeChild(child);
+}

@@ -1,0 +1,12 @@
+<% if message.sender == current_user %>
+    <% type = 'message-self' %>
+<% else %>
+    <% type = 'message-other' %>
+<% end %>
+
+<li id="<%= message.id %>" class="<%= type %> message-common">
+  <%= message.sender.name %> <br>
+  <%= message.content %> <br>
+  <%= message.created_at.strftime("%H:%M") %>
+</li>
+
