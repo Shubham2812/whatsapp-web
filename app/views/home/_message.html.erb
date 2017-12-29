@@ -1,12 +1,23 @@
+
+
 <% if message.sender == current_user %>
-    <% type = 'message-self' %>
+  <% type = 'alt' %>
+    <% type2 = 'alt2' %>
 <% else %>
-    <% type = 'message-other' %>
+    <% type = '' %>
+    <% type2 = '' %>
 <% end %>
 
-<li id="<%= message.id %>" class="<%= type %> message-common">
-  <%= message.sender.name %> <br>
-  <%= message.content %> <br>
-  <%= message.created_at.strftime("%H:%M") %>
+<li id="message_<%= message.id %>"  class="speech-wrapper">
+  <div class="bubble <%= type %>">
+    <div class="txt">
+      <% if not message.receiver_id %>
+        <p class="name"><%= message.sender.name %></p>
+      <% end %>
+      <p class="message"><%= message.content %></p>
+      <span class="timestamp"><%= message.created_at.strftime("%H:%M") %></span>
+    </div>
+    <div class="bubble-arrow <%= type2 %>"></div>
+  </div>
 </li>
 

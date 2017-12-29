@@ -1,0 +1,7 @@
+<!--var parent = document.getElementsByClassName('members_list')[0];-->
+<!--var child = document.getElementById('#@user_id');-->
+<!--if(child){-->
+  <!--parent.removeChild(child);-->
+<!--};-->
+//var userID = ' @user_id';
+$('#user-' + '<%= @user_id %>').children()[1].firstElementChild.lastElementChild.id = 'member-offline';

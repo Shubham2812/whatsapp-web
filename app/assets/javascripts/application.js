@@ -17,46 +17,56 @@
 
 function main(){
     var socket = io.connect('http://localhost:5000');
-    var current_user_email = document.getElementById('current_user_email');
-    if(current_user_email) {
+    // var current_user_email = document.getElementById('current_user_email');
+    var currentUserID = undefined;
+    if($('.my-profile-card')[0])
+        currentUserID = Number($('.my-profile-card').attr('id').slice(5));
+    if(currentUserID) {
         console.log('User logged in');
-        current_user_email = current_user_email.innerText;
+        // current_user_email = current_user_email.innerText;
+        // currentUserID = currentUserID[0].firstElementChild.id;
 
         socket.on('connect', function () {
-            socket.emit('join_room', {email: current_user_email});
+            socket.emit('join_room', {user_id: currentUserID});
         });
 
-        socket.on('user_left', function (data) {
-            if (data) {
-                console.log(data, " left the room");
+        socket.on('user_left', function (response) {
+            if (response) {
+                console.log(response, " left the room");
+                var data = {
+                    user_id: response.user_id
+                };
                 // Remove member <email> from List
                 $.ajax({
                     url: 'users/remove',
                     method: 'POST',
                     data: data,
                     success: function () {
-                        console.log("Success");
+                        console.log("Successfully Removed User", data);
                     },
                     error: function () {
-                        console.log("Error Removing member", data.email);
+                        console.log("Error Removing member", data);
                     }
                 });
             }
         });
 
-        socket.on('user_joined', function (data) {
-            if(data && data.email != current_user_email){
-                console.log(data, ' Joined');
+        socket.on('user_joined', function (response) {
+            if(response.user_id != currentUserID){
+                console.log(response, ' Joined');
                 // Add member <email> to the list
+                var data = {
+                    user_id: response.user_id
+                };
                 $.ajax({
                     url: 'users/add',
                     method: 'POST',
                     data: data,
                     success: function () {
-                        console.log("Success");
+                        console.log('Successfully added member ', response, ' to List');
                     },
                     error: function () {
-                        console.log('Error adding member ' + data.email + ' to List');
+                        console.log('Error adding member ', response, ' to List');
                     }
                 });
             }
@@ -66,28 +76,24 @@ function main(){
             console.log(event);
             event.preventDefault();
             data = {
-                sender_email: current_user_email,
+                sender_id: currentUserID,
                 receiver_id: undefined,
-                message: $('#send_0').siblings()[1].value
+                message: $('#send_0')[0].previousElementSibling.firstElementChild.value
             };
             if(data.message != ''){
-                var message_id = undefined;
                 console.log('Message Sent by Client', data);
                 $.ajax({
                     url: 'message/create',
                     method: 'POST',
                     data: data,
-                    // contentType:false,
-                    // cache: false,
-                    // processData:false,
                     success: function (message) {
-                        console.log("Message Saved", message.id)
-                        $('#message').val('');
-                        message_id = message.id;
+                        console.log("Message Saved", message.id);
+                        $('#send_0')[0].previousElementSibling.firstElementChild.value = '';
                         var response = {
                             message_id: message.id,
-                            receiver_id: undefined
-                        }
+                            receiver_id: undefined,
+                            sender_id: currentUserID
+                        };
                         socket.emit('message_sent', response);
                     },
                     error: function () {
@@ -97,69 +103,27 @@ function main(){
             }
 
         });
-        $('#send_2').click(function(event){
-           event.preventDefault();
-           console.log("Send_2 Clicked");
-           data = {
-               sender_email: current_user_email,
-               receiver_id: 2,
-               message: $('#send_2').siblings()[1].value
-           }
-
-           if(data.message != ''){
-               var message_id = undefined
-               console.log('Message Sent by Client', data);
-               $.ajax({
-                   url: 'message/create',
-                   method: 'POST',
-                   data: data,
-                   contentType:false,
-                   cache: false,
-                   processData:false,
-                   success: function (message) {
-                       console.log("Message Saved", message.id)
-                       $('#message').val('');
-                       message_id = message.id
-                       var response = {
-                           message_id: message.id,
-                           receiver_id: 2
-                       };
-                       socket.emit('message_sent', response);
-                   },
-                   error: function () {
-                       console.log("Error in Saving Message")
-                   }
-               });
-           }
-        });
-
 
         socket.on('message_received', function(response){
             console.log('Ack Received by Client', response);
             // Show Message in Chat Box
-            data = {
+            var data = {
                 message_id: response.message_id,
-                receiver_id: response.receiver_id
+                receiver_id: response.receiver_id,
+                sender_id: response.sender_id
             };
             $.ajax({
                 url: 'message/add',
                 method: 'POST',
                 data: data,
                 success: function(){
-                    console.log("Message Saved")
+                    console.log("Message Added")
                 },
                 error: function(){
-                    console.log("Error in Saving Message")
+                    console.log("Error in Adding Message")
                 }
             })
         })
-
-
-
-
-
-
-
 
     };
 

@@ -1,11 +1,15 @@
-var currentMemberID = '<%= @user.id %>'
-currentMemberID = Number(currentMemberID);
-var membersList = document.getElementsByClassName('members_list');
-alreadyAddedMembers = membersList[0].children;
-var addedMembersIDs = []
-$.each(alreadyAddedMembers, function(i) {
-    addedMembersIDs.push(Number(alreadyAddedMembers[i].id));
-});
-if(!addedMembersIDs.includes(currentMemberID)) {
-    $('.members_list').append('<%= escape_javascript(render 'users', {member: @user, make_link: false}) %>');
-}
+var currentMemberID = '<%= @user.id %>';
+//currentMemberID = Number(currentMemberID);
+
+$('#user-' + currentMemberID).children()[1].firstElementChild.lastElementChild.id = 'member-online';
+
+
+//var membersList = document.getElementsByClassName('members_list');
+//alreadyAddedMembers = membersList[0].children;
+//var addedMembersIDs = []
+//$.each(alreadyAddedMembers, function(i) {
+//    addedMembersIDs.push(Number(alreadyAddedMembers[i].id));
+//});
+//if(!addedMembersIDs.includes(currentMemberID)) {
+//    $('.members_list').append(' #escape_javascript(render 'users', {member: @user, make_link: false})');
+//}

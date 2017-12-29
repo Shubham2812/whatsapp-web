@@ -2,17 +2,16 @@
   <a class="user-chat-link" data-remote="true" href="/chat/<%= member.id %>">
 <% end %>
 
-  <div id="<%= member.id %>" class="member">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOkwGFosI4sUe9Ka4TISnIFBNwApruJjzYmb_iYyI7F53zfas">
-    <div class="member_left">
-      <div class="member_left_upper">
-        <span class="member_name"> <b> <%= member.name %> </b> </span>
-      </div>
-      <div class="member_left_lower">
-        <span> <%= member.email %> </span>
-        <div>
+  <div id="user-<%= member.id %>" class="member-card">
+    <img class="member-photo" src="/images/male-icon.jpg">
+    <div class="member-card-content">
+        <div class="member-name">
+          <span class="member-name-content"><%= member.name %></span>
+          <div class="member-status" id="member-<%= member.status %>"></div>
         </div>
-      </div>
+        <div class="member-info">
+          <span class="member-email"><%= member.email %></span>
+        </div>
     </div>
   </div>
 

@@ -1,3 +1,19 @@
 var li = $('<%= escape_javascript(render "message", message: @message) %>')[0];
 console.log(li);
-$('#send_<%= @receiver_id %>')[0].parentElement.firstElementChild.firstElementChild.appendChild(li);
+<% if @message.receiver_id %>
+
+if($('#send_<%= @receiver_id %>').length != 0) {
+    $('#send_<%= @receiver_id %>')[0].parentElement.parentElement.firstElementChild.firstElementChild.appendChild(li);
+}
+
+if($('#send_<%= @sender_id %>').length != 0) {
+    $('#send_<%= @sender_id %>')[0].parentElement.parentElement.firstElementChild.firstElementChild.appendChild(li);
+}
+
+<% else %>
+
+if($('#send_0').length != 0) {
+    $('#send_0')[0].parentElement.parentElement.firstElementChild.firstElementChild.appendChild(li);
+}
+
+<% end %>

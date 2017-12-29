@@ -1,11 +1,14 @@
-<div>
   <% if user %>
-    <%= user.name %>
-    <% send_button_ID = user.id %>
+      <% name = user.name %>
+      <% send_button_ID = user.id %>
   <% else %>
-    Group Chat
+      <% name = 'Group Chat' %>
       <% send_button_ID = 0 %>
   <% end %>
+
+<div class="chat-header">
+  <img class="chat-avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOkwGFosI4sUe9Ka4TISnIFBNwApruJjzYmb_iYyI7F53zfas"></img>
+  <div class="chat-body"><%= name %></div>
 </div>
 
 <div class="chat_box">
@@ -16,7 +19,13 @@
       <% end %>
     </ul>
   </div>
-  <%= text_field_tag :message, nil, :placeholder => 'Enter Your Message' %>
+  <div class="send-message-container">
+    <div class="input-container">
+      <input class="send-input" type="text" name="message" placeholder="Type a Message">
+    </div>
+    <img id="send_<%= send_button_ID %>" class="send-message-button" src="./images/send-button.png">
+  </div>
+  <% text_field_tag :message, nil, :placeholder => 'Enter Your Message' %>
   <% #image_submit_tag("/images/send_button.ico", class: :send_message) %>
-  <a id="send_<%= send_button_ID %>" class="send_message"> Send </a>
+  <!--<a id="send_o" class="send_message"> Send </a>-->
 </div>
